@@ -87,32 +87,55 @@ Here is our little demo video on Youtube, check it out!
 [![MealMinder](https://github.com/phamthiminhtu/ilab/assets/56192840/a1218196-8feb-4bea-be93-e3cab18c1206)](https://youtu.be/aIandiLboPo"MealMinder")
 
 
-# Pre-requisites
+# **Prerequisites**
 - Install the requirements.txt
 - Have an OpenAPI API KEY. Docs:
     - https://platform.openai.com/docs/quickstart?context=python#:~:text=write%20any%20code.-,MacOS,-Windows
     - https://help.openai.com/en/articles/4936850-where-do-i-find-my-openai-api-keyx
 
+- Python 3.7+
+-	numpy
+-	pandas
+- openai
+- duckdb
+- pytz
+- Jinja2
+- streamlit
+- streamlit-authenticator
+- scikit-learn
+- altair
+- python-Levenshtein
+- watchdog
 
 <p><small>Project based on the <a target="_blank" href="https://drivendata.github.io/cookiecutter-data-science/">cookiecutter data science project template</a>. #cookiecutterdatascience</small></p>
 
 The repository is organized as follows:
 
+
 Project Organization
 ------------
 
-├── data/
-│   ├── food_composition.csv
-│   ├── recommended_intake.csv
-├── models/
-│   ├── diabetes_prediction_model.pkl
-├── notebooks/
-│   ├── data_preprocessing.ipynb
-│   ├── recommendation_system.ipynb
-│   └── diabetes_risk_model.ipynb
-├── app/
-│   ├── app.py
-│   └── requirements.txt
-├── README.md
-├── reports/
-│   ├── final_report.pdf
+    ├── README.md          <- The top-level README for developers using this project.
+    ├── core
+    │   ├── ml_models       <- Random forest model to access diabetes.
+    │   ├── sql        		<- Files to interact with the database.
+    │   └── *.py            <- All the python notebooks related to project.
+    │
+    ├── data
+    │   ├── images       	<- General Images
+    │   └── csv          	<- Below are the dataset files in the csv format.  
+    │							nutrients_data.csv
+    │							nutrients_per_ingredient.csv
+    │							daily_nutrients_recommendation.csv
+    │
+    │
+    ├── images        		<- Images and diagrams form README.md
+    │
+    ├── unittests          <- Python notebook                           
+    │
+    ├── reports            <- Final Project Report.pdf
+    │ 
+    │ 
+    └── requirements.txt   <- The requirements file for reproducing the analysis environment, 
+                              e.g. generated with `pip freeze > requirements.txt`
+                              
